@@ -15,10 +15,10 @@ ssh-keygen -q -t rsa -N '' -f ~/.ssh/id_rsa <<<y >/dev/null 2>&1
 }
 
 COPY_KEYS(){
-sshpass -p "159951" ssh-copy-id -o StrictHostKeyChecking=no localhost
-sshpass -p "159951" ssh-copy-id -o StrictHostKeyChecking=no k8s-worker01
-sshpass -p "159951" ssh-copy-id -o StrictHostKeyChecking=no k8s-worker02
-sshpass -p "159951" ssh-copy-id -o StrictHostKeyChecking=no k8s-worker03
+sshpass -p "123456" ssh-copy-id -o StrictHostKeyChecking=no localhost
+sshpass -p "123456" ssh-copy-id -o StrictHostKeyChecking=no k8s-worker01
+sshpass -p "123456" ssh-copy-id -o StrictHostKeyChecking=no k8s-worker02
+sshpass -p "123456" ssh-copy-id -o StrictHostKeyChecking=no k8s-worker03
 }
 
 EDIT_HOSTFILE(){
